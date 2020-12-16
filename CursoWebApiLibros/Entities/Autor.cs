@@ -4,8 +4,6 @@ using CursoWebApiLibros.Entities;
 
 namespace CursoWebApiLibros.Entities
 {
-    //entityFramework => Code First
-    //entityFramework => Model First
     public class Autor
     {
         public int Id { get; set; }

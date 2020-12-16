@@ -11,7 +11,5 @@ namespace CursoWebApiLibros.Entities
         public int AutorId { get; set; }
         public Autor Autor { get; set; } //propiedad de navegacion
 
-
-
     }
 }
