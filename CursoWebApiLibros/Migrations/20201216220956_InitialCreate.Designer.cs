@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CursoWebApiLibros.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201214232848_Inicio")]
-    partial class Inicio
+    [Migration("20201216220956_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,6 +28,7 @@ namespace CursoWebApiLibros.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Nombre")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

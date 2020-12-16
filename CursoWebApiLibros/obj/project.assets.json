@@ -5798,19 +5798,19 @@
     ]
   },
   "packageFolders": {
-    "/home/yamila/.nuget/packages/": {}
+    "/home/leonardo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/yamila/Proyectos/CursoWebApiLibros/CursoWebApiLibros/CursoWebApiLibros.csproj",
+      "projectUniqueName": "/home/leonardo/ProyectosYami/CursoWebApiLibros/CursoWebApiLibros/CursoWebApiLibros.csproj",
       "projectName": "CursoWebApiLibros",
-      "projectPath": "/home/yamila/Proyectos/CursoWebApiLibros/CursoWebApiLibros/CursoWebApiLibros.csproj",
-      "packagesPath": "/home/yamila/.nuget/packages/",
-      "outputPath": "/home/yamila/Proyectos/CursoWebApiLibros/CursoWebApiLibros/obj/",
+      "projectPath": "/home/leonardo/ProyectosYami/CursoWebApiLibros/CursoWebApiLibros/CursoWebApiLibros.csproj",
+      "packagesPath": "/home/leonardo/.nuget/packages/",
+      "outputPath": "/home/leonardo/ProyectosYami/CursoWebApiLibros/CursoWebApiLibros/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/yamila/.nuget/NuGet/NuGet.Config"
+        "/home/leonardo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5859,12 +5859,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.8, 3.1.8]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
