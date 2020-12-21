@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CursoWebApiLibros.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201216224107_LibrosMigrations")]
-    partial class LibrosMigrations
+    [Migration("20201221184424_FirstMIgrations")]
+    partial class FirstMIgrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -2,10 +2,23 @@
 
 namespace CursoWebApiLibros.Migrations
 {
-    public partial class LibrosMigrations : Migration
+    public partial class FirstMIgrations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Autores",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Autores", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Libros",
                 columns: table => new
@@ -36,6 +49,9 @@ namespace CursoWebApiLibros.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Libros");
+
+            migrationBuilder.DropTable(
+                name: "Autores");
         }
     }
 }
