@@ -61,5 +61,19 @@ namespace CursoWebApiLibros.Controllers
             return Ok();
         }
 
+         [HttpDelete("{id}")]
+         public ActionResult<Autor> Delete(int id)
+         {
+             var resultado = context.Autores.FirstOrDefault(x => x.Id == id);
+
+             if( resultado == null)
+             {
+                 return NotFound();
+             }
+             context.Autores.Remove(resultado);
+             context.SaveChanges();
+             return resultado;
+         }
+
     }
 }
