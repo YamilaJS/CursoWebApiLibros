@@ -32,7 +32,7 @@ namespace CursoWebApiLibros.Controllers
         [HttpGet("{id}", Name="ObtenerLibro")]
         public ActionResult<Libro> Get(int id)
         {
-            var resultado = context.Libros.FirstOrDefault(x => x.Id == id);
+            var resultado = context.Libros.Include(x => x.Autor).FirstOrDefault(x => x.Id == id);
             if(resultado == null)
             {
                 return NotFound();

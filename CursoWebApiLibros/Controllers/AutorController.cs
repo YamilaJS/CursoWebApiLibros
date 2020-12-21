@@ -27,13 +27,15 @@ namespace CursoWebApiLibros.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Autor>> Get()
         {
-            return context.Autores.ToList();
+            return context.Autores.Include(x => x.Libros).ToList();
         }
 
-         [HttpGet("{id}", Name="ObtenerAutor")]
+        
+
+        [HttpGet("{id}", Name="ObtenerAutor")]
         public ActionResult<Autor> Get(int id)
         {
-            var resultado = context.Autores.FirstOrDefault(x => x.Id == id);
+            var resultado = context.Autores.Include(x => x.Libros).FirstOrDefault(x => x.Id == id);
             if(resultado == null)
             {
                 return NotFound();
